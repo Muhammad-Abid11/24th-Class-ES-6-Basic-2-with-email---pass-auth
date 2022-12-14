@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBVySPZ_Arxir5LQqbzHVVCmAuPMEkW_O8",
+            authDomain: "fir-authenticaation.firebaseapp.com",
+            projectId: "fir-authenticaation",
+            storageBucket: "fir-authenticaation.appspot.com",
+            messagingSenderId: "575963232825",
+            appId: "1:575963232825:web:c12f7abe4bb824fa1e6be8",
+            measurementId: "G-PDFCRYNHJG"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <!-- // Firebase Authetication -->
+
+
+    <div class="form">
+        <input placeholder="Enter Email" type="email" id="email">
+        <br> <input type="password" placeholder="Enter password" id="password">
+        <br>
+        <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <br><br>
+    <div class="form">
+        <input placeholder="Enter Email" type="email" id="login-email">
+        <br> <input type="password" placeholder="Enter password" id="login-password">
+        <br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
