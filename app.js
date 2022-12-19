@@ -141,25 +141,38 @@ getData(render_data);
 // 5. Array Filter Function   (higher order function) || jo return krta ho output
 
 
+/*
 
-// let array = [{ names: "abid", age: 20 }, { names: "sajid", age: 30 }]// in array 2 objects
-// console.log(array);
+let array = [{ names: "abid", age: 20 }, { names: "sajid", age: 30 }]// in array 2 objects
+console.log(array);
 
 // ////  array.filter(Functio ())  <-- in filter its requires 1 functionArgumnet
 
-// array.filter((a) => {                                 // array.filter(function(){
-//     console.log(`Data "a" k ander hai  `)
-//     console.log(a)                                  // })
-// })
+array.filter((a) => {                                 // array.filter(function(){
+    console.log(`Data "a" k ander hai  `)
+    console.log(a)                                  // })
+})
 
+array.filter((item, index, array1) => {
+    console.log("Items", item);
+    console.log("Index", index);
+    console.log("Arrays", array1);
+})
 
+*/
 
-/*     let filter =array.filter(()=> {return true})    //1. basically filter me jb true return hota hai to wo array sy sb ly ata hai
+/*
+let array = [{ names: "abid", age: 20 }, { names: "sajid", age: 30 }]// in array 2 objects
+
+let filter =array.filter(()=> {return true})    //1. basically filter me jb true return hota hai to wo array sy sb ly ata hai
      console.log(filter)                     // if false show nhi hoga kuch bhi
  */
 
 
-/*        let filter =array.filter((a)=> a.age===20)     //yhn 'a' argunment aya hai //2. yahn 1st condition true hai jbhi 1st show kry ga
+/*
+let array = [{ names: "abid", age: 20 }, { names: "sajid", age: 30 }]// in array 2 objects
+
+let filter =array.filter((a)=> a.age===20)     //yhn 'a' argunment aya hai //2. yahn 1st condition true hai jbhi 1st show kry ga
         console.log(filter)
 */
 
@@ -167,14 +180,11 @@ getData(render_data);
 
 /*
 
-
+let array = [{ names: "abid", age: 20 }, { names: "sajid", age: 30 }]// in array 2 objects
 let filter =array.filter(a=> a.age>10)
 console.log(filter)
 
 */
-
-
-
 
 
 // //       6. Search
