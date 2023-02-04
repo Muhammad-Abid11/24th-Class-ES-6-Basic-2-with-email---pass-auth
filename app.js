@@ -139,7 +139,7 @@ getData(render_data);
 
 
 // 5. Array Filter Function   (higher order function) || jo return krta ho output
-
+//  it always return its value
 
 /*
 
