@@ -338,7 +338,9 @@ let login = () => {
 
 
 
-// OOP's 
+// OOP's
+
+/*
 
 class Student {
     constructor(name, age) { // constructor function apne ap call hoten hen jb ap class banao
@@ -359,3 +361,37 @@ console.log(a)
 console.log(a.helloMethod())
 Student.staticMethod()
 
+*/
+
+// Inheritance
+
+
+/*
+
+
+class employee {
+    constructor(name, age, salary) { //agar nichy class me constructor nhi hoga too manager class yhn k constructor ko use kryga
+        this.empname = name;
+        this.empage = age;
+        this.empsalary = salary;
+        console.log(`Constructor : Employee `);
+    }
+    info() {
+        console.log(`Employe Name : ${this.empname} salary ${this.empsalary} age ${this.empage}`)
+    }
+}
+class manager extends employee {
+    info() {
+        let ta = 1000;
+        let pa = 1000;
+        let totalSalary = ta + pa + this.empsalary;
+        console.log(`Manager Name : ${this.empname} age ${this.empage} salary ${totalSalary}`)
+        super.info();// iski wajah sy upper k info bhi ap run kr sakty ho
+    }
+}
+let a = new manager("yahoo Baba", 21, 22300)
+let b = new employee("Shiekh Shiekh", 11, 300)
+a.info();
+b.info();
+
+*/
