@@ -294,7 +294,7 @@ let signup = () => {
 
     firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
         .then((user) => {
-            // Signed in 
+            // Signed in
             console.log(user)
             // ...
         })
@@ -338,4 +338,24 @@ let login = () => {
 
 
 
+// OOP's 
+
+class Student {
+    constructor(name, age) { // constructor function apne ap call hoten hen jb ap class banao
+        this._name = name;  // inka use hum class me initialization ya property define k liye use krten hen
+        this._age = age;    //
+    }
+    helloMethod() {     // ye prototype methods hoten hen iska constructor me koye bhi value ho inki calculation k liye
+        console.log(this._name)
+        return "Hi"
+    }
+    static staticMethod() { //ye ap a.staticMethod kr k use nhi sakty isy direct use kro
+        console.log("Hi Static")
+    }
+}
+
+let a = new Student("Abid", 2)
+console.log(a)
+console.log(a.helloMethod())
+Student.staticMethod()
 
